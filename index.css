@@ -78,9 +78,10 @@ h2{
 /*Middle cards*/
 
 .middle-cards{
-    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
     position: relative;
-    justify-content: row;
+    justify-content: space-between;
 }
 
 /*team-builder*/
