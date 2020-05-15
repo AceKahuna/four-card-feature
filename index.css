@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    color:   hsl(229, 6%, 66%);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    max-width: 1440px;
+    font-size: 16px; 
+    height: 100%;
+    background-color: hsl(0, 0%, 98%);
+    margin: auto;
+}
+
+h2{
+    color: #000000;
+}
+
+
+/*main*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Cards Section*/
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+/*about*/
+.about{
+    margin: 0 auto;
+    padding: 0
+}
+
+.rely{
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.power{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+.desc{
+    text-align: justify;
+    padding: 20px;
+}
+
+/*supervisor*/
+.supervisor{
+    background-color: #ffffff;
+    border-top: 5px solid hsl(0, 78%, 62%);
+    box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px;   
+    margin-bottom: 30px;
+    position: relative;
+    left: 450px;
+}
+
+.supervisor > img {
+    position: relative;
+    left: 280px;
+}
+
+/*Middle cards*/
+
+.middle-cards{
+    display: inline-block;
+    position: relative;
+    justify-content: row;
+}
+
+/*team-builder*/
+.team{
+    background-color: #ffffff;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.team > img{
+    position: relative;
+    left: 280px;
+}
+
+/* karma*/
+.calculator{
+    background-color: #ffffff;
+    border-top: 5px solid hsl(212, 86%, 64%);
+    box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.calculator> img{
+    position: relative;
+    left: 280px;
+}
+
+/*karma*/
+.karma{
+    background-color: #ffffff;
+    border-top: 5px solid hsl(34, 97%, 64%);
+    box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
+    border-radius: 5px;
+    width: 350px;
+    padding: 20px;
+    position: relative;
+    left: 450px;
+    bottom: 200px;
+}
+
+.karma > img{
+    position: relative;
+    left: 280px;
+}
+
+/*footer*/
+ footer {
+    margin: 30px auto;
+    text-align: center;    
+ }
+
+ footer p > a{
+     text-decoration: none;
+     color: orange;
+ }
+
+/* To be added later*/
+@media screen and (max-width:375 px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 0;
+    }
+}
+
