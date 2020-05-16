@@ -26,21 +26,15 @@ h2{
     flex-direction: column;
 }
 
-/*Cards Section*/
-.cards{
-    display: flex;
-    flex-direction: column;
-}
-
 /*about*/
 .about{
-    margin: auto;
+    margin: 0 auto;
 }
 
 .rely{
     font-size: 30px;
     font-weight: 200;
-    text-align: center;
+    text-align: center;;
 }
 
 .power{
@@ -50,12 +44,18 @@ h2{
     color: #000000;
 }
 .desc{
-    text-align: justify;
+    text-align: center;
     padding: 20px;
 }
+/*Cards Section*/
+.cards{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
 
-/*supervisor*/
-.supervisor{
+/*team-builder*/
+.team{
     background-color: #ffffff;
     border-top: 5px solid hsl(0, 78%, 62%);
     box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
@@ -63,10 +63,11 @@ h2{
     border-radius: 5px;
     padding: 20px;  
     position: relative;
-    left: 450px;
+    margin-bottom: 30px;
+    align-self: center;
 }
 
-.supervisor > img {
+.team > img{
     position: relative;
     left: 250px;
 }
@@ -75,26 +76,25 @@ h2{
 
 .middle-cards{
     display: flex;
-    position: relative;
+    flex-direction: row;
     justify-content: space-between;
-    bottom: 100px
+    flex-wrap: nowrap;
 }
 
-/*team-builder*/
-.team{
+/*supervisor*/
+.supervisor{
     background-color: #ffffff;
     border-top: 5px solid hsl(180, 62%, 55%);
     box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
     width: 350px;
     border-radius: 5px;
     padding: 20px;
-    position: relative;
     margin-bottom: 30px;
 }
 
-.team > img{
+.supervisor > img {
     position: relative;
-    left: 280px;
+    left: 250px;
 }
 
 /* calculator*/
@@ -121,14 +121,12 @@ h2{
     border-radius: 5px;
     width: 350px;
     padding: 20px;
-    position: relative;
-    left: 450px;
-    bottom: 200px;
+    align-self: center;
 }
 
 .karma > img{
     position: relative;
-    left: 280px;
+    left: 250px;
 }
 
 /*footer*/
@@ -143,14 +141,15 @@ h2{
  }
 
 /* To be added later*/
-@media screen and (max-width:375 px){
+@media screen and (max-width:750px){
     .cards{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .middle-cards{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
