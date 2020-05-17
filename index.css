@@ -158,12 +158,11 @@ img{
     .cards{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 350px;
+        width: auto;
     }
     .center-cards{
         display: flex;
         flex-direction: column;
-        align-self: stretch;
+        align-self: center;
     }
 }
