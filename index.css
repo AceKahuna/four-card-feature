@@ -20,6 +20,7 @@ h2{
 img{
     display: flex;
     align-self: flex-end;
+    margin-top: 50px;
 }
 
 /*main*/
@@ -93,7 +94,7 @@ img{
     box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
     max-width: 350px;
     border-radius: 5px;
-    padding: 20px;  
+    padding: 30px;  
     align-self: center;
     margin-bottom: 20px;
 }
