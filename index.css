@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 *{
+    margin: 0;
     padding: 0;
     color:   hsl(229, 6%, 66%);
     font-family: 'Poppins', sans-serif;
 }
-
 
 body{
     max-width: 1440px;
@@ -14,7 +14,7 @@ body{
 }
 
 h2{
-    color: #000000;
+    color: hsl(234, 12%, 34%);
 }
 
 img{
@@ -33,8 +33,9 @@ img{
 .about{
     display: flex;
     flex-direction: column ;
-    align-items: center;
+    align-items: center; 
 }
+
 .rely{
     font-size: 30px;
     font-weight: 200;
@@ -45,22 +46,21 @@ img{
 .power{
     font-size: 30px;
     font-weight: 600;
-    color: #000000;
+    color: hsl(234, 12%, 34%);
     margin-top: 0;
-    margin-bottom: 0;
 }
+
 .desc{
     width: 500px;
     text-align: center;
     margin-top: 0;
     padding: 10px;
 }
+
 /*Cards Section*/
 .cards{
-    width: 100%;
     display: flex;
     flex-flow: row ;
-    justify-content: space-around;
 }
 
 /*supervisor*/
@@ -70,18 +70,18 @@ img{
     background-color: #ffffff;
     border-top: 5px solid hsl(180, 62%, 55%);
     box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
-    width: 350px;
     border-radius: 5px;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     align-self: center;
+    max-width: 350px;
 }
 
 /*center cards*/
-
 .center-cards{
     display: flex;
     flex-direction: column;
+    margin: 30px;
 }
 
 /*team-builder*/
@@ -91,12 +91,11 @@ img{
     background-color: #ffffff;
     border-top: 5px solid hsl(0, 78%, 62%);
     box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
-    width: 350px;
+    max-width: 350px;
     border-radius: 5px;
     padding: 20px;  
-    position: relative;
-    margin-bottom: 30px;
     align-self: center;
+    margin-bottom: 20px;
 }
 
 /*karma*/
@@ -107,10 +106,9 @@ img{
     border-top: 5px solid hsl(34, 97%, 64%);
     box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
     border-radius: 5px;
-    width: 350px;
+    max-width: 350px;
     padding: 20px;
     align-self: center;
-    margin-bottom: 20px;
 }
 
 /* calculator*/
@@ -121,11 +119,10 @@ img{
     border-top: 5px solid hsl(212, 86%, 64%);
     box-shadow: 5px 5px 8px  hsl(229, 6%, 66%);
     border-radius: 5px;
-    width: 350px;
+    max-width: 350px;
     padding: 20px;    
     align-self: center;
-    margin-bottom: 3px;
-    
+    margin: 10px;
 }
 
 /*footer*/
@@ -140,21 +137,16 @@ img{
  }
 
 /* To be added later*/
-@media screen and (max-width:375px){
-    .main{
-        width:auto;
-        padding: 10px;
-    }
+@media screen and (max-width:750px){
     .about{
-        width: auto;
-        align-items: baseline;
-    }
-    .about > h1{
-        font-size: 25px;
+        align-items: flex-start;
         margin: 0;
     }
+    .about > h1{
+        font-size: 20px;
+    }
     .about > h2{
-        font-size: 25px;
+        font-size: 20px;
         margin: 0;
     }
     .desc{
@@ -167,12 +159,11 @@ img{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: auto;
+        width: 350px;
     }
     .center-cards{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-self: stretch;
     }
 }
-
